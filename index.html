@@ -14,61 +14,56 @@
   </head>
 
   <body>
-    <div class="container">
-      <section class="header">
-        <h2>Contato</h2>
-      </section>
-
-      <form
-        class="form"
-        action="https://formsubmit.co/danielfreirebfh@gmail.com"
-        method="POST"
-      >
-        <div class="form-content">
-          <label for="nome"><strong>Nome:</strong></label>
-          <input
-            type="text"
-            placeholder="Digite seu nome"
-            name="name"
-            required
-          />
-          <a>preencha esse campo...</a>
-          <label for="email"><strong>Email:</strong></label>
-          <input
-            type="email"
-            placeholder="Digite seu email"
-            name="email"
-            required
-          />
-          <a>preencha esse campo...</a>
-        </div>
-        <div>
-          <label for="assunto"><strong>Assunto:</strong></label>
-          <input
-            type="text"
-            placeholder="Digite o assunto"
-            ="assunto"
-            required
-          />
-          <a>preencha esse campo...</a>
-        </div>
-        <div>
-          <label for="message"><strong>Mensagem:</strong></label>
-          <textarea
-            name="message"
-            placeholder="Digite sua Mensagem"
-            ="message"
-          ></textarea>
-          <a>preencha esse campo...</a>
-        </div>
+    <form
+      action="https://formsubmit.co/danielfreirebfh@gmail.com"
+      method="POST"
+      data-form
+    >
+      <div class="form-content">
+        <label for="nome"><strong>Nome</strong></label>
         <input
-          type="hidden"
-          name="_next"
-          value="http://127.0.0.1:5500/index.html"
+          type="text"
+          placeholder="Digite seu nome"
+          name="name"
+          id="name"
+          required
         />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+        <a>preencha esse campo...</a>
+      </div>
+      <div class="form-content">
+        <label for="email"><strong>Email</strong></label>
+        <input
+          type="email"
+          placeholder="Digite seu email"
+          name="email"
+          id="email"
+          required
+        />
+        <a>preencha esse campo...</a>
+      </div>
+      <div class="form-content">
+        <label for="assunto"><strong>Assunto</strong></label>
+        <input
+          type="text"
+          placeholder="Digite o assunto"
+          name="assunto"
+          id="assunto"
+          required
+        />
+        <a>preencha esse campo...</a>
+      </div>
+      <div class="form-content">
+        <label for="message"><strong>Mensagem</strong></label>
+        <textarea
+          name="message"
+          placeholder="Digite sua Mensagem"
+          id="message"
+          required
+        ></textarea>
+        <a>preencha esse campo...</a>
+      </div>
+      <button type="submit" data-button>Enviar</button>
+    </form>
   </body>
   <script src="./devform.js"></script>
 </html>
